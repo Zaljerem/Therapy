@@ -54,7 +54,7 @@ public class JobDriver_Therapize : JobDriver
             //JoyUtility.JoyTickCheckEnd(pawn, JoyTickFullJoyAction.EndJob, extraJoyGainFactor);
 
             pawn.skills.Learn(SkillDefOf.Social, 0.11f);
-            pawn.GainComfortFromCellIfPossible();
+            pawn.GainComfortFromCellIfPossible(1);
 
             CounselPatient((Pawn)TargetThingB);
         };

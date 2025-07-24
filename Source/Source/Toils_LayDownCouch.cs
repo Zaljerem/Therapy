@@ -33,7 +33,7 @@ namespace Therapy
             };
             layDown.tickAction = delegate {
                 Pawn actor = layDown.actor;
-                actor.GainComfortFromCellIfPossible();
+                actor.GainComfortFromCellIfPossible(1);
 
                 var driver = actor.jobs.curDriver;
                 if (driver is JobDriver_ReceiveTherapy receive && receive.CurrentTreatedMemory != null) return; // being treated

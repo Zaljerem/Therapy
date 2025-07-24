@@ -20,7 +20,7 @@ namespace Therapy
 
         public override Job TryGiveJob(Pawn pawn)
         {
-            if (!InteractionUtility.CanInitiateInteraction(pawn))
+            if (!SocialInteractionUtility.CanInitiateInteraction(pawn))
             {
                 //Log.Warning(pawn.NameStringShort + ": can't initiate interaction");
                 return null;
